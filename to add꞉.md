@@ -1,7 +1,7 @@
 ---
 title: 'to add:'
 created: '2024-12-14T09:29:37.553Z'
-modified: '2025-02-04T09:27:49.236Z'
+modified: '2025-02-10T17:48:25.539Z'
 ---
 
 # to add:
@@ -113,6 +113,16 @@ To get the difference between two sets (a-b):
 std::set<int> result;
 std::set_difference(a.begin(),a.end(),b.begin(),b.end(),inserter(result,result.end()));
 ```
+# \<Utility\>
+## std::exchange
+`T exchange( T& obj, U&& new_value)` replaces obj with new value and returns the old value
+```
+doSomething(exchange(a,b))
+//is equal to
+doSomething(a)
+a=b
+``````
+
 
 # IO
 ## printf, fprintf, snprintf
