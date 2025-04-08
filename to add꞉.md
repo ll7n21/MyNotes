@@ -69,6 +69,8 @@ dynamic array, suits scenario that needs random access elements frequently, perf
 - resize
   - `a.rezie(5)`-> resize vector to size 5
   - `a.resize(15,0)`-> resize vector to size 15, initialize newly added elements to 0  
+- comparison
+  - it is ok to compare two vector elementwise using `vector1 == vector2`, time complexity is O(1). 
 ## list
 bidirectional linked list, suits scenario that needs frequent insertion or deletion of elements in the middle, does not support ra
 ## deque
