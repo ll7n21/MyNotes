@@ -1,7 +1,7 @@
 ---
 title: 'to add:'
 created: '2024-12-14T09:29:37.553Z'
-modified: '2025-02-10T17:48:25.539Z'
+modified: '2025-05-01T09:39:04.258Z'
 ---
 
 # to add:
@@ -99,6 +99,17 @@ simple unidirectional linked list. performance is good for insertion and deletio
 - Why prefer `!=container.end()` over `<container.end()` in loop?  
 Because <ins>operators`<`,`>`can only be used with RandomAccessIterator</ins>, while operator`!=`can also be used with InputIterator, ForwardIterator, and BidirectionalIterator.  
 Ref:[Stackoverflow: Why is != used with iterator instead of <?](https://stackoverflow.com/a/6673775/2405914)
+- Caution with using erase() when iterating
+Because once call erase(it), the iterator will be unable to use.
+Ref:[StackOverflow: What happens to an STL iterator after erasing it](https://stackoverflow.com/questions/433164/what-happens-to-an-stl-iterator-after-erasing-it-in-vs-unix-linux)
+e.g.
+```
+vector<int>::iterator it = l.begin();
+while (it != l.end())
+    l.erase(it);//wrong, it will be unable to use and comparing it with l.end() cause error
+    l=l.erase(it) //correct, since erase() return a new iterator in the updated container
+```
+
 
 # \<algorithm\>
 ## std::binary_search()
