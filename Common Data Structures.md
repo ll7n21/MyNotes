@@ -1,7 +1,7 @@
 ---
 title: Common Data Structures
 created: '2025-01-01T16:27:38.589Z'
-modified: '2025-02-10T17:42:05.863Z'
+modified: '2025-05-07T08:26:22.799Z'
 ---
 
 # Common Data Structures
@@ -52,6 +52,10 @@ vector<int> getAllElementsOfOneTree(TreeNode* root) {
 ## Big O Notation
 - [StackOverFlow: Big O, how do you calculate/approximate it?](https://stackoverflow.com/questions/3255/big-o-how-do-you-calculate-approximate-it/)
 - [StackOverFlow: What is a plain english explanation of big-o-notation](https://stackoverflow.com/questions/487258/what-is-a-plain-english-explanation-of-big-o-notation)
+
+# Named Algorithms
+## Floyd's Cycle Finding Algorithm
+Uses Fast pointer with 2* speed of slow pointer to identify loop.
 
 # Resources
 - [NST: Dictionary of Algorithms and Data Structures](https://xlinux.nist.gov/dads/)
