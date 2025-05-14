@@ -1,7 +1,7 @@
 ---
 title: 'to add:'
 created: '2024-12-14T09:29:37.553Z'
-modified: '2025-05-01T09:39:04.258Z'
+modified: '2025-05-14T07:54:38.067Z'
 ---
 
 # to add:
@@ -84,6 +84,7 @@ simple unidirectional linked list. performance is good for insertion and deletio
 - check if a key exists: `a.contains(k)` or `a.find(k)!=a.end()`.
 - [at() vs find()](https://stackoverflow.com/questions/38734808/use-of-find-vs-at-in-map-unordered-map): use at() when you are certain this key exists in the map, find() when this key may or may not exists in the map.
 - [using pair<int,int> as key will cause error](https://medium.com/@gulshansharma014/call-to-implicitly-deleted-default-constructor-of-unordered-map-pair-int-int-int-d3b2a6da0b41) because `unordered_map` requires the key type to be hashable and have well-defined equality operator.
+- if need to modify content while looping, need to use for `auto&` instead of `auto`. [ref](https://stackoverflow.com/questions/45743126/how-come-iterating-through-unordered-map-but-cannot-change-its-mapped-value)
 ## set
 * `erase(iterator first, iterator second)`: parameters are iterator to this set object. Passing iterators to another set would not work, this is not the way to get set difference, check out `set_difference()` instead.
 * `set` vs `unordered_set`: `set` is implemented with binary search tree, elements are stored in increasing order by default; `unordered_set` is implmented with hash table.
