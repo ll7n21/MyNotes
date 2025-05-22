@@ -1,7 +1,7 @@
 ---
 title: Common Data Structures
 created: '2025-01-01T16:27:38.589Z'
-modified: '2025-05-22T17:36:36.196Z'
+modified: '2025-05-22T17:44:25.406Z'
 ---
 
 # Common Data Structures
@@ -35,6 +35,8 @@ vector<int> getAllElementsOfOneTree(TreeNode* root) {
 Min heap essentially is binary tree.
 it allows quick retrieval and removal of minimum elements.
 in C++, Priority Queue can be used to make min or max heap.
+e.g. min map of integer:
+` priority_queue<int, vector<int>, greater<int>> pq;`
 
 # Common Algorithms
 ## Sort
