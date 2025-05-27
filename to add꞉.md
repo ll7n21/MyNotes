@@ -1,7 +1,7 @@
 ---
 title: 'to add:'
 created: '2024-12-14T09:29:37.553Z'
-modified: '2025-05-14T07:54:38.067Z'
+modified: '2025-05-27T07:47:45.397Z'
 ---
 
 # to add:
@@ -80,6 +80,9 @@ double-ended queue, suits scenario that needs fequently insertion or deletion of
 ## forward_list
 simple unidirectional linked list. performance is good for insertion and deletion at front end, does not support reverse traversal.
 
+## map vs unordered_map
+map is sorted by key increasingly.
+unordered_map suits situations when fast eccess to elements is desired and order of elements does not matter.
 ## unordered_map
 - check if a key exists: `a.contains(k)` or `a.find(k)!=a.end()`.
 - [at() vs find()](https://stackoverflow.com/questions/38734808/use-of-find-vs-at-in-map-unordered-map): use at() when you are certain this key exists in the map, find() when this key may or may not exists in the map.
