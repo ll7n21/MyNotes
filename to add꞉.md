@@ -1,13 +1,10 @@
 ---
 title: 'to add:'
 created: '2024-12-14T09:29:37.553Z'
-modified: '2025-05-27T07:47:45.397Z'
+modified: '2025-06-19T08:21:14.842Z'
 ---
 
 # to add:
-string.find()
-string.substr()
-stoi()
 unordered_map.insert({k,v})
 # nullptr vs NULL
 `NULL` is a macro expanded to `0` or `0L` whch can be serve as both an intergral type and a pointer.  
@@ -47,11 +44,19 @@ cout << &ar << endl; ////0000000C062FF7E4
 ## [pass by confernece or value to function?](https://stackoverflow.com/questions/2139224/how-should-i-pass-objects-to-functions)
 
 # String
+string.find()
+string.substr()
+stoi()
 - [Converrt String to Integer](https://www.geeksforgeeks.org/convert-string-to-int-in-cpp/)
-- `string substr(size_t pos=0, size_t len=pos) const` e.g. `"01234".substr(0,3) -> "012"`
 - `find()`; `find_first_of()`
 - iterate string: `for (char& ch : s)`
 - `void resize(size_t n, char c)`: can be used to shorten string to first n chars or pad string with specified character at the end.
+## substr
+`string substr(size_t pos=0, size_t len=npos) const` e.g. `"01234".substr(0,3) -> "012"
+
+if len is not given then till the end of the string.
+or can construct string with iterator: 
+`std::string s7 (s0.begin(), s0.begin()+7);`
 
 # STL
 ## vector
@@ -72,13 +77,23 @@ dynamic array, suits scenario that needs random access elements frequently, perf
 - comparison
   - it is ok to compare two vector elementwise using `vector1 == vector2`, time complexity is O(1). 
 ## list
-bidirectional linked list, suits scenario that needs frequent insertion or deletion of elements in the middle, does not support ra
-## deque
+bidirectional linked list, suits scenario that needs frequent insertion or deletion of elements in the middle, does not support random access.
+
+## forward_list
+simple unidirectional linked list. performance is good for insertion and deletion at front end, does not support reverse traversal.
+
+
+## queue
+
+### priority queue
+Use priority to make min heap: ` priority_queue<int, vector<int>, greater<int>> pq;` (smallest on top)
+the use of comparator sounds counter-intuitive -- using greater() for min-element-top-priority while usually less() comparator is used for ascending sort. [Reason](https://stackoverflow.com/questions/32748069/the-reason-of-using-stdgreater-for-creating-min-heap-via-priority-queue)
+
+### deque
 double-ended queue, suits scenario that needs fequently insertion or deletion of elements at both head and tail ends. Support random access.
 - `a.push_front(e); a.pop_front(e)`
 - `a.push_back(e); a.pop_back(e)`
-## forward_list
-simple unidirectional linked list. performance is good for insertion and deletion at front end, does not support reverse traversal.
+
 
 ## map vs unordered_map
 map is sorted by key increasingly.

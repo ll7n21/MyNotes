@@ -1,7 +1,7 @@
 ---
 title: Common Data Structures
 created: '2025-01-01T16:27:38.589Z'
-modified: '2025-05-22T17:44:25.406Z'
+modified: '2025-06-19T17:26:48.020Z'
 ---
 
 # Common Data Structures
@@ -36,7 +36,7 @@ Min heap essentially is binary tree.
 it allows quick retrieval and removal of minimum elements.
 in C++, Priority Queue can be used to make min or max heap.
 e.g. min map of integer:
-` priority_queue<int, vector<int>, greater<int>> pq;`
+` priority_queue<int, vector<int>, greater<int>> pq;`//assign highest priority to the smallest element
 
 # Common Algorithms
 ## Sort
@@ -55,6 +55,11 @@ e.g. min map of integer:
 - can be implemented in [iterative approach](https://www.freecodecamp.org/news/binary-search-in-c-algorithm-example/) or recursive approach.
 - Time: O(log(n))
 - Space: O(1)
+## Track max and min with deque
+[Ref: Finding max and min of an array in O(1) time](https://medium.com/@harish.sivasubramanian04/finding-the-max-and-min-of-an-array-in-o-1-time-7beb839d1eba)
+[leetcode 2944](https://leetcode.com/problems/minimum-number-of-coins-for-fruits/description/)
+* Time: O(1)
+
 # Other Topics
 ## Big O Notation
 - [StackOverFlow: Big O, how do you calculate/approximate it?](https://stackoverflow.com/questions/3255/big-o-how-do-you-calculate-approximate-it/)
@@ -65,6 +70,7 @@ e.g. min map of integer:
 Uses Fast pointer with 2* speed of slow pointer to identify loop.
 
 # Resources
+- [Codeforce: contest platform](https://codeforces.com/blog/entry/122003)
 - [NST: Dictionary of Algorithms and Data Structures](https://xlinux.nist.gov/dads/)
 - [xoax.net/ComputerScience](https://xoax.net/sub_comp_sci/)
 - [Leetcode: Blind 75 question list](https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions)
