@@ -1,7 +1,7 @@
 ---
 title: Common Data Structures
 created: '2025-01-01T16:27:38.589Z'
-modified: '2025-06-19T17:26:48.020Z'
+modified: '2025-06-24T08:12:14.452Z'
 ---
 
 # Common Data Structures
@@ -70,6 +70,7 @@ e.g. min map of integer:
 Uses Fast pointer with 2* speed of slow pointer to identify loop.
 
 # Resources
+- [Competitive Programmming Algorithms](https://cp-algorithms.com/)
 - [Codeforce: contest platform](https://codeforces.com/blog/entry/122003)
 - [NST: Dictionary of Algorithms and Data Structures](https://xlinux.nist.gov/dads/)
 - [xoax.net/ComputerScience](https://xoax.net/sub_comp_sci/)
