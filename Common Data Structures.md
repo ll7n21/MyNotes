@@ -1,7 +1,7 @@
 ---
 title: Common Data Structures
 created: '2025-01-01T16:27:38.589Z'
-modified: '2025-06-24T08:12:14.452Z'
+modified: '2025-06-26T17:27:35.852Z'
 ---
 
 # Common Data Structures
@@ -68,6 +68,10 @@ e.g. min map of integer:
 # Named Algorithms
 ## Floyd's Cycle Finding Algorithm
 Uses Fast pointer with 2* speed of slow pointer to identify loop.
+## [Dutch National Flag Algorithm](https://loopccew.medium.com/dutch-national-flag-algorithm-91c469d9182b)
+Use 3 pointers to segregate array that contains 3 distinct values.
+[leetcode 75: sort colors](https://leetcode.com/problems/sort-colors/description/)
+
 
 # Resources
 - [Competitive Programmming Algorithms](https://cp-algorithms.com/)
