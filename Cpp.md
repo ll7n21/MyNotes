@@ -1,7 +1,7 @@
 ---
 title: 'to add:'
 created: '2024-12-14T09:29:37.553Z'
-modified: '2025-06-19T08:21:14.842Z'
+modified: '2025-07-03T07:56:19.549Z'
 ---
 
 # to add:
@@ -131,6 +131,8 @@ while (it != l.end())
 
 
 # \<algorithm\>
+## std::sort()
+descending: `std::sort(v.begin(),v.end(),std::greater<int>())`
 ## std::binary_search()
 - time: O(log(n))
 - only works on sorted data, returns bool.
