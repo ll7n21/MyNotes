@@ -1,7 +1,7 @@
 ---
 title: 'to add:'
 created: '2024-12-14T09:29:37.553Z'
-modified: '2025-07-03T07:56:19.549Z'
+modified: '2025-08-01T22:39:17.017Z'
 ---
 
 # to add:
@@ -84,7 +84,7 @@ simple unidirectional linked list. performance is good for insertion and deletio
 
 
 ## queue
-
+[emplace vs push](https://stackoverflow.com/questions/35518611/difference-between-queues-emplace-and-push)
 ### priority queue
 Use priority to make min heap: ` priority_queue<int, vector<int>, greater<int>> pq;` (smallest on top)
 the use of comparator sounds counter-intuitive -- using greater() for min-element-top-priority while usually less() comparator is used for ascending sort. [Reason](https://stackoverflow.com/questions/32748069/the-reason-of-using-stdgreater-for-creating-min-heap-via-priority-queue)
@@ -132,7 +132,9 @@ while (it != l.end())
 
 # \<algorithm\>
 ## std::sort()
+By default, sort in ascending order.
 descending: `std::sort(v.begin(),v.end(),std::greater<int>())`
+Alternatively, `sort(v,rbegin(),v.rend())` also sorts descendingly.
 ## std::binary_search()
 - time: O(log(n))
 - only works on sorted data, returns bool.
