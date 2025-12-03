@@ -1,7 +1,7 @@
 ---
 title: 'to add:'
 created: '2024-12-14T09:29:37.553Z'
-modified: '2025-08-01T22:39:17.017Z'
+modified: '2025-10-25T14:36:55.308Z'
 ---
 
 # to add:
@@ -76,6 +76,7 @@ dynamic array, suits scenario that needs random access elements frequently, perf
   - `a.resize(15,0)`-> resize vector to size 15, initialize newly added elements to 0  
 - comparison
   - it is ok to compare two vector elementwise using `vector1 == vector2`, time complexity is O(1). 
+- [emplace_back() vs push_back()](https://stackoverflow.com/questions/10890653/why-would-i-ever-use-push-back-instead-of-emplace-back)
 ## list
 bidirectional linked list, suits scenario that needs frequent insertion or deletion of elements in the middle, does not support random access.
 
@@ -175,4 +176,13 @@ while (getline(file, line)) {
 	ss >> a >> b;//any variables to read from the line
 }
 ```
+# Syntax Sugar
+## [Structured Bindings](https://www.cppstories.com/2022/structured-bindings/)
+```
+std::pair<char,int> ciPairs;
+for (auto [ch, num] : ciPairs) {
+  ...
+}
+```
+
 
