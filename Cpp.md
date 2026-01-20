@@ -1,7 +1,7 @@
 ---
 title: 'to add:'
 created: '2024-12-14T09:29:37.553Z'
-modified: '2025-10-25T14:36:55.308Z'
+modified: '2026-01-20T11:45:18.945Z'
 ---
 
 # to add:
@@ -46,7 +46,8 @@ cout << &ar << endl; ////0000000C062FF7E4
 # String
 string.find()
 string.substr()
-stoi()
+string to interger: `std::stoi()`
+integer to String: `std::to_string(int intVal)`
 - [Converrt String to Integer](https://www.geeksforgeeks.org/convert-string-to-int-in-cpp/)
 - `find()`; `find_first_of()`
 - iterate string: `for (char& ch : s)`
@@ -72,7 +73,7 @@ dynamic array, suits scenario that needs random access elements frequently, perf
   - `a.insert_range(a.end(),b)` (C++23)
   - `a.insert(a.end(),b.cbegin(),c.cend())`
 - resize
-  - `a.rezie(5)`-> resize vector to size 5
+  - `a.resize(5)`-> resize vector to size 5
   - `a.resize(15,0)`-> resize vector to size 15, initialize newly added elements to 0  
 - comparison
   - it is ok to compare two vector elementwise using `vector1 == vector2`, time complexity is O(1). 
