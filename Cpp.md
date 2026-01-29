@@ -1,7 +1,7 @@
 ---
 title: 'to add:'
 created: '2024-12-14T09:29:37.553Z'
-modified: '2026-01-20T11:45:18.945Z'
+modified: '2026-01-29T17:25:17.273Z'
 ---
 
 # to add:
@@ -151,6 +151,7 @@ To get the difference between two sets (a-b):
 std::set<int> result;
 std::set_difference(a.begin(),a.end(),b.begin(),b.end(),inserter(result,result.end()));
 ```
+Be aware that the parameters `a` `b` passed in should be of set type, if is of vector type then the result may contain redundant values.
 # \<Utility\>
 ## std::exchange
 `T exchange( T& obj, U&& new_value)` replaces obj with new value and returns the old value
